@@ -1,5 +1,6 @@
 package nl.codecraftr.introduction.printable
 
+import nl.codecraftr.introduction.Cat
 import nl.codecraftr.introduction.printable.PrintableInstances._
 import nl.codecraftr.introduction.printable.PrintableSyntax._
 import org.scalatest.flatspec.AnyFlatSpec
