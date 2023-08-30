@@ -1,7 +1,7 @@
 package nl.codecraftr
 
-import cats.implicits._
+import nl.codecraftr.introduction.printable.{Cat, Printable}
 
 object Main extends App {
-  println("Hello " |+| "Cats!")
+  Printable.print(Cat("Garfield", 38, "ginger and black"))
 }
