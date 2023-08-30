@@ -1,7 +1,8 @@
 package nl.codecraftr
 
-import nl.codecraftr.introduction.printable.{Cat, Printable}
+import nl.codecraftr.introduction.printable.Cat
+import nl.codecraftr.introduction.printable.PrintableSyntax._
 
 object Main extends App {
-  Printable.print(Cat("Garfield", 38, "ginger and black"))
+  Cat("Garfield", 38, "ginger and black").print
 }

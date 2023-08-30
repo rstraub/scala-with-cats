@@ -1,6 +1,7 @@
 package nl.codecraftr.introduction.printable
 
 import nl.codecraftr.introduction.printable.PrintableInstances._
+import nl.codecraftr.introduction.printable.PrintableSyntax._
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 
@@ -14,8 +15,10 @@ class PrintableTest extends AnyFlatSpec with Matchers {
   }
 
   it should "format a cat" in {
-    Printable.format(
-      Cat("Garfield", 38, "ginger and black")
-    ) shouldBe "Garfield is a 38 year-old ginger and black cat."
+    Cat(
+      "Garfield",
+      38,
+      "ginger and black"
+    ).format shouldBe "Garfield is a 38 year-old ginger and black cat."
   }
 }
